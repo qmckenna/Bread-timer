@@ -64,12 +64,11 @@ function BreadTimerApp() {
   );
 }
 
-function App() {
+// Wrapper component that provides the context
+export default function BreadTimer() {
   return (
     <RecipeProvider>
       <BreadTimerApp />
     </RecipeProvider>
   );
 }
-
-export default BreadTimerApp;
